@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>問題１</title>
+    
+    </head>
+    
+    <body>
+    <div>
+        <h1>問題１：来年は2019年？</h1>
+        
+        <div><a href="#" onclick="seikai">はい</a></div>
+        <div><a href="#" onclick="matigai">いいえ</a></div>
+        
+        </div>
+        
+        <h1>問題２：来年は東京？</h1>
+        
+        <div><a href="#" onclick="seikai">はい</a></div>
+        <div><a href="#" onclick="matigai">いいえ</a>
+        </div>
+        
+        
+        <script>
+        var hit=Number=(localStorage.hit);
+            
+            function seikai(){
+                hit=hit+1;
+            localStorage.hit=hit;//記憶する
+            location.herf="kekka.html"//次のページに移動}
+            
+            function matigai(){
+                     localStorage.hit=hit;//記憶する
+            location.herf="kekka.html"//次のページに移動}
+            }
+                
+                
+            //結果ページ
+                 var result=document.getElementById("result");
+                var hit=document.getElementById("hit")
+        </script>
+        
+        
+       
+        
+    
+    
+    
+    
+    
+    </body>
+</html>
