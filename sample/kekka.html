@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結果</title>
+</head>
+     <style>
+        body{background-color: azure;}
+    </style>
+<body>
+    <center>
+  
+<div id="kekka">
+    <h1>👑結果発表👑</h1>
+    <div id="result"></div>
+     
+</div>
+ 
+    <script>
+var result = document.getElementById("result");
+var hit = localStorage.hit;
+
+result.innerHTML = "正解数は5問中"+hit+"問です。よく頑張りました！";
+    </script>
+     <a href="https://twitter.com/cinnamon_sanrio"><img src="sanrio_link.png"></a> </center>
+</body>
+</html>
