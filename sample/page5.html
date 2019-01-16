@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>シナモロール検定</title>
+</head>
+     <style>
+        body{background-color:black;color: blue;}
+    </style>
+<body>
+    <center>
+   
+<div id="page5">
+    <h1>Q5 シナモンは宇宙から来た？</h1>
+    <img src="Cr9RbhMUEAAQufR.jpg">
+    <div><a href="#" onclick="machigai()">はい</a></div>
+    <div><a href="#" onclick="seikai()">いいえ</a></div>
+</div>
+ </center>
+    <script>
+        var hit=Number(localStorage.hit);
+
+        function seikai(){
+            hit = hit+1;
+            localStorage.hit = hit;
+            location.href = "kekka.html";
+        }
+        function machigai(){
+            localStorage.hit = hit;
+            location.href = "kekka.html";
+        }
+        
+    </script>
+</body>
+</html>

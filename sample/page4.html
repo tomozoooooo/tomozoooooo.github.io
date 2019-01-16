@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>シナモロール検定</title>
+</head>
+     <style>
+        body{background-color: azure;}
+    </style>
+<body>
+    <center>
+   
+<div id="page5">
+    <h1>Q4 シナモンの誕生日は3月6日？</h1>
+    <img src="15820740535e22866e20821e2db44a84.gif">
+    <div><a href="#" onclick="seikai()">はい</a></div>
+    <div><a href="#" onclick="machigai()">いいえ</a></div>
+</div>
+ </center>
+    <script>
+        var hit=Number(localStorage.hit);
+
+        function seikai(){
+            localStorage.hit = hit+1;
+            
+            location.href = "page5.html";
+        }
+        function machigai(){
+            localStorage.hit = hit;
+            location.href = "page5.html";
+        }
+        
+    </script>
+</body>
+</html>
